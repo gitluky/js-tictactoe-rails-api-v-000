@@ -132,7 +132,7 @@ function displayGames() {
       if (data['data'].length > 0) {
         var gamesHTML = ''
         for (var i = 0; i < data['data'].length; i++) {
-          gamesHTML += '<button>' + data['data'][i]['id'] + '</button>'
+          gamesHTML += '<button>' + data['data'][i]['id'] + ' - ' + data['data'][i]['updated_at'] + '</button>'
         }
         $('#games').html(gamesHTML)
         $('#games button').click(function(event) {
