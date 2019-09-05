@@ -61,14 +61,12 @@ function checkWinner() {
     }
 }
 
-
 function resetGame() {
   $('td').each(function(index, el) {
     $(el).text('');
   })
   turn = 0;
 }
-
 
 function getState() {
   var state = []
